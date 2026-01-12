@@ -6,6 +6,7 @@
   background-attachment: fixed;
   background-color: var(--page-bg-dark);
 }
+
 .header {
   position: relative;
   display: grid;
@@ -19,7 +20,6 @@
 .decorated-zone {
   position: relative;
 }
-
 .decorated-zone::before,
 .decorated-zone::after {
   content: "";
@@ -29,7 +29,6 @@
   border-color: var(--accent-color);
   border-style: solid;
 }
-
 .decorated-zone::before {
   inset-block-start: 10px;
   inset-inline-end: 10px;
@@ -38,7 +37,6 @@
   border-block-end-width: 0;
   border-inline-start-width: 0;
 }
-
 .decorated-zone::after {
   inset-block-end: 10px;
   inset-inline-start: 10px;
@@ -57,11 +55,11 @@
   gap: var(--header-theme-menu-list-gap);
 }
 .header__theme-menu-button {
-  width: 70px;
-  min-height: 26px;
+  min-width: 70px;
+  padding: 1px;
   background-color: transparent;
   border: transparent;
-  font-family: var(--header-font-family);
+  font-family: var(--header-font-family), monospace;
   font-weight: normal;
   font-size: var(--header-font-size);
   text-transform: lowercase;
@@ -83,7 +81,7 @@
 .header_title {
   grid-column: 1 / 3;
   align-self: end;
-  font-family: var(--header-font-family);
+  font-family: var(--header-font-family), monospace;
   font-weight: bold;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.83;
@@ -97,7 +95,7 @@
   background-color: var(--header-discription-bg-color);
 }
 .title-decor {
-  font-family: var(--header-font-family);
+  font-family: var(--header-font-family), monospace;
   font-weight: bold;
   font-size: var(--header-font-size);
   color: var(--header-p-color);
@@ -108,7 +106,7 @@
   align-items: center;
   inset-block-start: 10px;
   inset-inline-end: 19px;
-  font-family: var(--header-font-family);
+  font-family: var(--header-font-family), monospace;
   font-size: var(--header-font-size);
   color: var(--accent-color);
   text-transform: uppercase;
@@ -121,14 +119,14 @@
   margin-inline-start: 10px;
   background-color: currentColor;
   border-radius: 50%;
-  box-shadow: 0 0 12px var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
 }
+
 .main {
   display: flex;
   flex-direction: column;
   gap: var(--main-gap);
   padding: var(--main-padding);
-  background-color: var(--page-bg-dark);
 }
 .section {
   display: grid;
@@ -145,7 +143,7 @@
 }
 .section_title {
   grid-column: 1 / 4;
-  font-family: var(--section-title-font-family);
+  font-family: var(--section-title-font-family), monospace;
   font-weight: bold;
   font-size: var(--section-title-font-size);
   color: var(--accent-color);
@@ -157,7 +155,7 @@
   background-color: var(--header-discription-bg-color);
 }
 .section_card_discription {
-  font-family: var(--section-discription-font-family);
+  font-family: var(--section-discription-font-family), monospace;
   font-weight: normal;
   font-size: var(--section-discription-font-size);
   color: var(--section-discription-color);
@@ -165,13 +163,12 @@
 }
 .section_card_link {
   text-decoration: none;
-  text-shadow: 2px 1px 0 var(--section-card-link-text-shadow);
+  text-shadow: 2px 2px 0 var(--section-card-link-text-shadow);
   cursor: pointer;
 }
 .section_card_link:hover {
   outline: none;
-  text-decoration: underline;
-  text-decoration-color: var(--section-card-link-hover);
+  border-bottom: 1px solid var(--section-card-link-hover);
 }
 .section_card_link:focus-visible {
   outline: 1px solid var(--section-card-link-hover);
@@ -206,14 +203,14 @@
     "books"
     "street";
 }
-.section_five_advice {
+.section_advices {
   grid-column: 1 / 4;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.section_five_advice_title {
-  font-family: var(--section-title-font-family);
+.section_advices_title {
+  font-family: var(--section-title-font-family), monospace;
   font-weight: normal;
   font-size: var(--section-title-font-size);
   color: var(--section-five-advice-title);
@@ -223,7 +220,6 @@
   height: 100%;
   object-fit: cover;
 }
-
 .gallery_sunset {
   grid-area: sunset;
 }
@@ -239,37 +235,26 @@
 .gallery_street {
   grid-area: street;
 }
+
 .footer {
   display: flex;
   padding: var(--footer-padding);
   height: 100vh;
   min-height: 668px;
-  background-color: var(--page-bg-dark);
 }
 .footer_title {
   align-self: center;
   justify-self: center;
-  font-family: var(--footer-font-family);
+  font-family: var(--footer-font-family), monospace;
   font-weight: bold;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.83;
   color: var(--footer-title-color);
   text-shadow: 4px 4px 0 var(--footer-title-text-shadow);
 }
+
 @media (min-width: 768px) {
-  :root {
-    --header-gap: 162px;
-    --header-padding: 192px 20px 183px 0;
-    --header-theme-menu-list-gap: 8px;
-    --main-gap: 80px;
-    --main-padding: 60px 20px;
-    --section_gallery-gap: 20px;
-    --section-card-gap: 10px;
-    --section-picture-gap: 20px;
-    --footer-padding: 20px;
-  }
   .header {
-    min-height: 1024px;
     grid-template-columns: 1fr 364px;
   }
   .header_title {
@@ -311,7 +296,7 @@
   .section_picture_title {
     grid-column: 1 / 4;
   }
-  .section_five_advice {
+  .section_advices {
     grid-column: 2 / 4;
   }
   .section_adviсe,
@@ -334,22 +319,8 @@
   }
 }
 @media (min-width: 1024px) {
-  :root {
-    --header-gap: 114px;
-    --header-padding: 20px 20px 134px 0;
-    --header-theme-menu-list-gap: 10px;
-    --main-gap: 80px;
-    --main-padding: 60px 20px;
-    --section_gallery-gap: 20px;
-    --section-card-gap: 10px;
-    --footer-padding: 20px;
-  }
   .header {
-    min-height: 768px;
     grid-template-columns: 1fr 491px;
-  }
-  .header_title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .header__theme-menu {
     grid-column: 1 / 3;
@@ -360,7 +331,7 @@
   }
   .section_adviсe,
   .section_concentrate {
-    grid-template-columns: 314.96px 1fr;
+    grid-template-columns: 315px 1fr;
   }
   .card_attention_multitasking {
     grid-column: 1 / 2;
@@ -374,12 +345,5 @@
   .section_gallery {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 260px 315px 433px;
-    grid-template-areas:
-      "sunset    sunset    ice-cream"
-      "tape      books     ice-cream"
-      "tape      street    street";
-  }
-  .footer_title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }

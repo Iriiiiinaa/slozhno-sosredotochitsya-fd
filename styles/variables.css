@@ -1,7 +1,7 @@
 :root {
   --header-gap: 55px;
   --header-padding: 75px 10px 66px;
-  --header-font-family: "IBM Plex mono", Arial, sans-serif;
+  --header-font-family: "IBM Plex mono";
   --header-font-size: 18px;
   --header-theme-menu-list-gap: 10px;
   --main-gap: 50px;
@@ -10,13 +10,13 @@
   --section_gallery-gap: 10px;
   --section-card-gap: 10px;
   --section-picture-gap: 10px;
-  --section-title-font-family: "IBM Plex mono", Arial, sans-serif;
+  --section-title-font-family: "IBM Plex mono";
   --section-title-font-size: 18px;
-  --section-discription-font-family: "IBM Plex mono", Arial, sans-serif;
+  --section-discription-font-family: "IBM Plex mono";
   --section-discription-font-size: 18px;
   --section-discription-color: #f1b2ce;
   --footer-padding: 10px;
-  --footer-font-family: "IBM Plex mono", Arial, sans-serif;
+  --footer-font-family: "IBM Plex mono";
 
   --page-bg-img-dark: url("../images/cover-image-dark.png");
   --page-bg-dark: #000028;
@@ -33,4 +33,29 @@
   --section-card-link-text-shadow: #ff0070;
   --section-card-link-hover: #f1b2ce;
   --rec-display: flex;
+}
+@media (min-width: 768px) {
+  :root {
+    --header-gap: 162px;
+    --header-padding: 192px 20px 183px 0;
+    --header-theme-menu-list-gap: 8px;
+    --main-gap: 80px;
+    --main-padding: 60px 20px;
+    --section_gallery-gap: 20px;
+    --section-card-gap: 10px;
+    --section-picture-gap: 20px;
+    --footer-padding: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --header-gap: 114px;
+    --header-padding: 20px 20px 134px 0;
+    --header-theme-menu-list-gap: 10px;
+    --main-gap: 80px;
+    --main-padding: 60px 20px;
+    --section_gallery-gap: 20px;
+    --section-card-gap: 10px;
+    --footer-padding: 20px;
+  }
 }
