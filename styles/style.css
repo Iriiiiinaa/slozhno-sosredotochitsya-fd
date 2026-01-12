@@ -174,7 +174,6 @@
   text-decoration-color: var(--section-card-link-hover);
 }
 .section_card_link:focus-visible {
-  outline: none;
   outline: 1px solid var(--section-card-link-hover);
 }
 .card_concentrate_multitasking {
