@@ -1,4 +1,36 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --header-gap: 55px;
+  --header-padding: 75px 10px 66px;
+  --header-font-family: "IBM Plex mono", Arial, sans-serif;
+  --header-font-size: 18px;
+  --header-theme-menu-list-gap: 10px;
+  --main-gap: 50px;
+  --main-padding: 40px 10px;
+  --section-gap: 20px;
+  --section_gallery-gap: 10px;
+  --section-card-gap: 10px;
+  --section-picture-gap: 10px;
+  --section-title-font-family: "IBM Plex mono", Arial, sans-serif;
+  --section-title-font-size: 18px;
+  --section-discription-font-family: "IBM Plex mono", Arial, sans-serif;
+  --section-discription-font-size: 18px;
+  --section-discription-color: #f1b2ce;
+  --footer-padding: 10px;
+  --footer-font-family: "IBM Plex mono", Arial, sans-serif;
+
+  --page-bg-img-dark: url("../images/cover-image-dark.png");
+  --page-bg-dark: #000028;
+  --header-discription-bg-color: #ff0070;
+  --header-p-color: #000028;
+  --header-title-color: #db00ff;
+  --footer-title-color: #db00ff;
+  --header-title-text-shadow: #ff0070;
+  --footer-title-text-shadow: #ff0070;
+  --accent-color: #ff0070;
+  --accent-color-rgb: 255, 0, 112;
+  --section-five-advice-title: #000028;
+  --section-discription-color: #f1b2ce;
+  --section-card-link-text-shadow: #ff0070;
+  --section-card-link-hover: #f1b2ce;
+  --rec-display: flex;
+}
