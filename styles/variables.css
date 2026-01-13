@@ -38,7 +38,6 @@
   :root {
     --header-gap: 162px;
     --header-padding: 192px 20px 183px 0;
-    --header-theme-menu-list-gap: 8px;
     --main-gap: 80px;
     --main-padding: 60px 20px;
     --section_gallery-gap: 20px;
@@ -51,7 +50,6 @@
   :root {
     --header-gap: 114px;
     --header-padding: 20px 20px 134px 0;
-    --header-theme-menu-list-gap: 10px;
     --main-gap: 80px;
     --main-padding: 60px 20px;
     --section_gallery-gap: 20px;
